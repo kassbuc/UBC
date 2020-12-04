@@ -13,7 +13,7 @@ void Grades::changegrade(int newgrade)
 
 int Grades::getcoursegrade(void)					// The Overall course grade
 {
-	CourseGrade = 0.0;
+	CourseGrade = 0;
 	for (auto it = allgrades.cbegin(); it != allgrades.cend(); ++it) {
 		CourseGrade += *it;
 	}

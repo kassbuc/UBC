@@ -4,18 +4,23 @@
 using namespace std;
 #include <list>
 #include "Application.h"
+#include "C:\RTExamples\rt.h"
 
 class Student
 {
-
 	Application* newApplication;
+
+public:
 	int average;
 	int ID;
 
-public:
+	Student(int, int);
+	void WriteApplication(void);
 
-	Student();
-	void WriteApplication(int average, int ID);
+	void ChangeEssayRank(int rank);
+	void SortApplication();
+
+	int GetEssayRank();
 
 };
 

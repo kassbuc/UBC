@@ -3,7 +3,6 @@
 Instructor::Instructor()
 {
 	newGrades = new Grades;
-	ReadApplication = new Application;
 }
 
 void Instructor::UpdateGrades(int newgrade)
@@ -18,6 +17,4 @@ void Instructor::UploadGrades(void)
 	cout << "Student grade %: " << newGrades->getcoursegrade() << endl;
 }
 
-void Instructor::ReadEssay(int essaygrade) {
-	ReadApplication->EssayRank = essaygrade;
-}
+

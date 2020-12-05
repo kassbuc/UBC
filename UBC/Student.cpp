@@ -11,7 +11,7 @@ void Student::WriteApplication() {
 	newApplication = new Application;
 	newApplication->average = this->average;
 	newApplication->StudentID = this->ID;
-	cout << "Student " << ID <<  " writting application..." << endl;
+	cout << "Student " << ID <<  " writing application..." << endl;
 	Sleep(1000);
 }
 

@@ -5,11 +5,15 @@
 #include "AdmissionStaff.h"
 #include "C:\RTExamples\rt.h"
 #include <iostream>
+#include "UnitTest.h"
 using namespace std;
 
 int main(void) {
 	Instructor instructor;
 	Grades grade;
+
+	UnitTest unitTestRunner;
+	
 
 	// Demonstrate instructor uploading grades to system
 

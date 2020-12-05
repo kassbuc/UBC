@@ -39,3 +39,4 @@ void AdmissionStaff::Admit(Student student) {
 		}
 	}
 }
+

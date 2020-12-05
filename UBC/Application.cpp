@@ -6,7 +6,6 @@ Application::Application()			// Fill out personal info to application
 {
 	cout << "Student created application\n";
 }
-
 void Application::Sort() {
 	cout << "Sorting application\n";
 	if (average >= 95) {

@@ -14,3 +14,5 @@ void Student::WriteApplication() {
 	cout << "Student " << ID <<  " writting application..." << endl;
 	Sleep(1000);
 }
+
+

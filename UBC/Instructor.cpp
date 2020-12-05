@@ -16,5 +16,3 @@ void Instructor::UploadGrades(void)
 	getchar();
 	cout << "Student grade %: " << newGrades->getcoursegrade() << endl;
 }
-
-

@@ -45,3 +45,4 @@ int main(void) {
 	admission.Admit(student4);
 	admission.Admit(student5);
 }
+

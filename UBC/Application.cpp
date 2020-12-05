@@ -1,11 +1,6 @@
 #include "Application.h"
 #include <list>
 
-struct applicationsorting {
-	list<int> admitpile;
-	list<int> goodpile;
-	list<int> okpile;
-};
 
 Application::Application()			// Fill out personal info to application
 {
@@ -13,31 +8,32 @@ Application::Application()			// Fill out personal info to application
 }
 
 void Application::Sort() {
-
-	cout << "sorting...\n";
-	CDataPool dp1("mutex", sizeof(struct applicationsorting));	
-	struct applicationsorting* dataptr = (struct applicationsorting*)dp1.LinkDataPool();
-
+	cout << "Sorting application\n";
 	if (average >= 95) {
-		dataptr->admitpile.push_back(average);			// high grade = automatic admission
+		cout << "send to admit pile\n";
+		admit += 1;
 	}
 	else if (average > 75 && EssayRank == 3) {			// average grade high essay = admit
-		dataptr->admitpile.push_back(average);
+		cout << "send to admit pile\n";
+		admit += 1;
 	}
 	else if (average > 75 && EssayRank == 2) {			// average grade average essay = good pile
-		dataptr->goodpile.push_back(average);
+		cout << "send to good pile\n";
+		goodpile += 1;
 	}
 	else if (average > 75 && EssayRank == 1) {			// average grade bad essay = okpile
-		dataptr->okpile.push_back(average);
+		cout << "send to ok pile\n";
+		okpile += 1;
 	}
 	else if (average > 65 && EssayRank == 3) {			// low grade high essay = goodpile
-		dataptr->goodpile.push_back(average);
+		cout << "send to good pile\n";
+		goodpile += 1;
 	}
 	else if (average > 65 && EssayRank == 2) {			// low grade mediocre essay = okpile
-		dataptr->okpile.push_back(average);
+		cout << "send to ok pile\n";
+		okpile += 1;
 	}
 	else {
 		cout << "sending application to next choice program" << endl;
-
 	}
 }

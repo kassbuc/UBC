@@ -6,11 +6,11 @@
 
 class AdmissionStaff
 {
-	int spotsavailable;
+	int spotsavailable = 5;
 
 public:
 	AdmissionStaff();
 	void AssessEssay(Student student);
-	void Admit();
+	void Admit(Student student);
 };
 

@@ -8,19 +8,15 @@ using namespace std;
 
 class Student
 {
-	Application* newApplication;
 
 public:
 	int average;
 	int ID;
+	Application* newApplication;
 
 	Student(int, int);
 	void WriteApplication(void);
 
-	void ChangeEssayRank(int rank);
-	void SortApplication();
-
-	int GetEssayRank();
 
 };
 

@@ -14,15 +14,3 @@ void Student::WriteApplication() {
 	cout << "Student " << ID <<  " writting application..." << endl;
 	Sleep(1000);
 }
-
-void Student::ChangeEssayRank(int rank) {
-	newApplication->EssayRank = rank;
-}
-
-void Student::SortApplication() {
-	newApplication->Sort();
-}
-
-int Student::GetEssayRank() {
-	return newApplication->EssayRank;
-}

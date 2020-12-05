@@ -12,6 +12,10 @@ public:
 	int StudentID;
 	int EssayRank;
 
+	int admit = 0;
+	int goodpile = 0;
+	int okpile = 0;
+
 	Application();
 	void Sort();
 
